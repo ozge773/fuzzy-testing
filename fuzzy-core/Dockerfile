@@ -18,7 +18,8 @@ RUN apt-get install -y \
     lld-14 \
     llvm-14 \
     llvm-14-dev \
-    clang-14
+    clang-14 \
+    nano
 	
 RUN apt-get install -y \	
     gcc-$(gcc --version | head -n1 | sed 's/\..*//' | sed 's/.* //')-plugin-dev 
