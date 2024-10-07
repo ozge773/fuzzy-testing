@@ -69,6 +69,17 @@ make connect
 
 This command simplifies the process of connecting to the container, avoiding the need to manually execute long Docker commands.
 
+## Examples
+
+To test the examples, follow these steps:
+
+1. Copy the example folder to the `M:` virtual hard drive.
+2. Connect to the container and navigate to the `/mnt/m` directory.
+3. Run the following commands:
+
+   - `make build`: This will generate the binary.
+   - `make run`: This will start the fuzz testing. 
+
 ## Development Status
 
 This repository is currently under active development. Features and functionality may change over time, and there are no guarantees that everything will work perfectly at this stage.
