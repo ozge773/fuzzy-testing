@@ -16,11 +16,11 @@ Before using this project, ensure that you have the following installed:
 
 ### Step 1: Clone the Repository
 
-First, clone the repository to your local machine:
+First, clone the repository to your local machine (Windows):
 
 ```bash
-git clone https://github.com/yourusername/fuzzy-testing-core.git
-cd fuzzy-testing-core
+git clone https://github.com/yourusername/fuzzy-testing.git
+cd fuzzy-testing
 ```
 
 ### Step 2: Create a Folder and Set Up the Virtual Hard Drive
@@ -31,7 +31,7 @@ You need to create a folder on your local machine that will be shared with the c
 2. Execute the `install-startup-vhd.bat` script (as admin). This script will create a virtual hard drive that maps to the folder you just created.
    
    ```bash
-   ./install-startup-vhd.bat
+   .\install-startup-vhd.bat
    ```
 
    You will be prompted to provide the folder path that you created in step 1. Once done, the script will create a virtual hard drive under the letter `M:`. This drive will link to the folder you specified.
