@@ -19,7 +19,7 @@ Before using this project, ensure that you have the following installed:
 First, clone the repository to your local machine (Windows):
 
 ```bash
-git clone https://github.com/yourusername/fuzzy-testing.git
+git clone https://github.com/devcoons/fuzzy-testing.git
 cd fuzzy-testing
 ```
 
