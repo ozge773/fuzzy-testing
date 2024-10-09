@@ -11,5 +11,5 @@ build:
 run:
 	-rm -r input_corpus $(CATCH)
 	-mkdir input_corpus
-	-echo "" > input_corpus/empty_seed
-	-afl-fuzz -i input_corpus -o output_corpus -- ./wolframroesler_example
+	-echo "Hello world" > input_corpus/empty_seed
+	-afl-fuzz -p explore -i input_corpus -o output_corpus -- ./wolframroesler_example
