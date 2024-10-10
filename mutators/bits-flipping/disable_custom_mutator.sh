@@ -1,0 +1,3 @@
+#!/bin/bash
+unset AFL_CUSTOM_MUTATOR_LIBRARY
+unset AFL_CUSTOM_MUTATOR_ONLY
