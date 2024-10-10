@@ -41,7 +41,7 @@ You need to create a folder on your local machine that will be shared with the c
 
 ### Step 3: Build the Docker Container Image
 
-To build the Docker image with AFL++ and GDB pre-installed, run the following command:
+To build the Docker image with AFL++ and GDB pre-installed, run the following command (in the folder `/fuzzy-core`):
 
 ```bash
 make build
@@ -51,7 +51,7 @@ This will create a container image using the Dockerfile and install the necessar
 
 ### Step 4: Run the Container
 
-After the image is built, you can start the container. The `M:` drive will automatically be linked to `/mnt/m` inside the container for file sharing between the host and container.
+After the image is built, you can start the container (in the folder `/fuzzy-core`). (The `M:` drive will automatically be linked to `/mnt/m` inside the container for file sharing between the host and container.)
 
 To run the container, use the following command:
 
@@ -61,7 +61,7 @@ make run
 
 ### Step 5: Connect to the Running Container
 
-To access the container’s terminal and begin your fuzzing experiments, you can connect to the running container's console using:
+To access the container’s terminal and begin your fuzzing experiments, you can connect to the running container's console using (in the folder `/fuzzy-core`):
 
 ```bash
 make connect
