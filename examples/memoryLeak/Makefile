@@ -5,7 +5,7 @@ else
 endif
 
 build:  
-	-afl-clang-fast -fsanitize=fuzzer,address -o leak leak.c
+	-afl-clang-fast -fsanitize=fuzzer,address,leak -o leak leak.c
 
 
 run:

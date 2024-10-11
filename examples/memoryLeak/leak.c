@@ -22,7 +22,7 @@ void leak_function(int base, int exponent, int mod){
     int *results = (int *)malloc(BUFFER_SIZE * sizeof(int));
     if(!results)
         return;
-    for(int i  = 0; i >BUFFER_SIZE; i++){
+    for(int i  = 0; i <BUFFER_SIZE; i++){
         results[i] = square_multiply(base, exponent+i, mod);
     }
     if(exponent% mod == 0){
@@ -36,9 +36,9 @@ void leak_function(int base, int exponent, int mod){
 int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size){
     if(Size < 3)
         return 0;
-    int base = Data[0] +1;
-    int exponent = Data[1];
-    int mod = Data[2]+1;
+    int base = *((int*)(Data)) +1;
+    int exponent = *(int *)(Data +4);
+    int mod = *((int *)(Data +8))+1;
 
     leak_function(base, exponent, mod);
 
